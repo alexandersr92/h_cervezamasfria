@@ -1,0 +1,23 @@
+{
+  "name": "alexandersanchez/superexpress",
+  "autoload": {
+    "psr-4": {
+      "Alexandersanchez\\Superexpress\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Alexander Sánchez",
+      "email": "alexander.sanchez@idoagency.com"
+    }
+  ],
+  "require": {
+    "aws/aws-sdk-php": "^3.300",
+    "phpoffice/phpspreadsheet": "^2.0"
+  },
+  "config": {
+    "platform": {
+      "php": "8.0"
+    }
+  }
+}

@@ -1,0 +1,143 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+@import "./custom-components.css";
+
+@import "./custom-utilities.css";
+
+/* admin bar fix */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+label,
+button,
+a,
+table {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.supperBackground {
+  /* Imagen de fondo que se repite */
+  background-image: url("/wp-content/themes/superexpress/assets/img/bg.jpeg"),
+    /* Imagen de patrón */
+      radial-gradient(
+        50% 69.63% at 50% 65.74%,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+    radial-gradient(
+      71.8% 102.59% at 50% 52.04%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+
+  /* Permitir que el patrón de la imagen de fondo se repita */
+  background-repeat: repeat, no-repeat, no-repeat;
+
+  /* Los gradientes cubrirán todo el contenedor */
+  background-size: auto, cover, cover;
+  background-position: center, center, center;
+
+  /* Mezclar las capas con el modo multiply */
+  background-blend-mode: multiply;
+}
+
+.bgHeaderDeco {
+  background-image: url("/wp-content/themes/superexpress/assets/img/header_deco.svg");
+  background-repeat: repeat-x;
+}
+.bgFooterDeco {
+  background-image: url("/wp-content/themes/superexpress/assets/img/border footer-min.png");
+
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: top;
+}
+
+ul.nav__list {
+  @apply flex flex-row items-center font-extrabold text-text gap-4;
+}
+ul.nav__list li {
+  @apply px-4;
+}
+ul.nav__list li:hover {
+  @apply bg-accent-100 py-4 rounded-[10px];
+}
+ul.nav__list li.current-menu-item:not(.no-active) {
+  @apply bg-accent-200 py-4 rounded-[10px];
+}
+
+ul.nav__list__mobile {
+  @apply hidden flex-col font-extrabold text-text absolute left-1 top-[112px] w-full bg-white -ml-1;
+}
+ul.nav__list__mobile.active {
+  @apply flex;
+}
+ul.nav__list__mobile li {
+  @apply p-5  border-b-2 border-[#11388C];
+}
+ul.nav__list__mobile li:hover {
+  @apply bg-accent-100;
+}
+ul.nav__list__mobile li.current-menu-item:not(.no-active) {
+  @apply bg-accent-200;
+}
+
+.active .menubtn {
+  @apply hidden;
+}
+.active .closebtn {
+  @apply block;
+}
+.winnerElement {
+  margin-bottom: 0px !important;
+  @apply bg-[#FF671D] border-[#FBFF40] border-4 py-6 w-full rounded-full flex justify-center items-center text-[26px] tracking-wider;
+}
+
+.tableWinner {
+  @apply w-full border-2 border-[#173981];
+}
+
+.tableWinner th {
+  @apply text-[#1B549E] font-bold text-[18px] bg-[#FEBE26] text-center py-4 px-2 border-r-2 border-[#1B549E] border-b-2;
+}
+.tableWinner th:first-child {
+  @apply w-[50px];
+}
+.tableWinner th:last-child {
+  @apply border-r-0;
+}
+.tableWinner td {
+  @apply text-[#1B549E]  text-[18px] border-r-2 border-[#1B549E] py-4 px-2 text-center;
+}
+.tableWinner tr {
+  @apply border-b-2 border-[#1B549E] bg-white;
+}
+.tableWinner tr:last-child {
+  @apply border-b-0;
+}
+
+.frameWinner p,
+.frameWinner h3 {
+  text-align: left !important;
+}
+
+#moda_factura {
+  width: 80vw;
+  height: 80vh;
+}
+#moda_factura img {
+  height: 100%;
+}
+
+.overlay {
+  @apply bg-black bg-opacity-50 fixed top-0 left-0 w-full h-full z-50;
+}

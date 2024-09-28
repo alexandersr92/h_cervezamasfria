@@ -1,0 +1,7 @@
+/node_modules
+/localhost.pem
+/localhost-key.pem
+/uploads/*.*
+.DS_Store
+
+/vendor/

@@ -1,0 +1,72 @@
+.formWrapper__input input[type="number"]::-webkit-inner-spin-button,
+.formWrapper__input input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.formWrapper {
+  @apply mx-auto bg-[#852F04] border-[5px] border-[#FEBE26] flex flex-col items-center p-8 md:p-[60px] rounded-[20px] w-full;
+}
+.formWrapper form {
+  @apply w-full;
+}
+.formWrapper h3 {
+  @apply text-[#FDFF86] text-xl font-extrabold mb-2 text-center;
+}
+.formWrapper p {
+  @apply text-white text-[24px] font-extrabold mb-2 text-center;
+}
+.formWrapper p.p_small {
+  @apply text-white text-base font-normal mb-2 text-center leading-5;
+}
+.formWrapper__input {
+  @apply flex flex-col mb-6 w-full;
+}
+.formWrapper__input label {
+  @apply text-white text-base font-semibold mb-2;
+}
+.formWrapper__input input {
+  @apply text-[#0033A1] placeholder-[#5C91D1] text-base font-extrabold  px-4 py-[14px] rounded-full border-neutro-100 border-2 w-full min-w-0;
+}
+.formWrapper__input.disabled label {
+  @apply text-neutro-100 text-base font-extrabold mb-2;
+}
+.formWrapper__input.disabled input {
+  @apply text-neutro-200 text-base font-extrabold  px-4 py-[14px] rounded-full border-neutro-100 border-2 w-full min-w-0 bg-neutro-100 outline-neutro-200;
+}
+.formWrapper__input.disabled input:focus {
+  @apply outline-2 outline-neutro-200;
+}
+
+.formWrapper__input input:focus {
+  @apply outline-2 outline-accent-200;
+}
+.formWrapper__input--file {
+  @apply flex flex-col gap-2 mb-6;
+}
+
+.formWrapper__input--file label {
+  @apply text-white text-base font-extrabold;
+}
+.formWrapper__input--file span {
+  @apply text-white text-base;
+}
+.formWrapper__input--file input[type="file"] {
+  @apply text-white text-base font-extrabold;
+}
+.formWrapper__input--check {
+  @apply flex items-center mb-6;
+}
+.formWrapper__input--check label {
+  @apply text-white text-base font-extrabold;
+}
+.formWrapper__input--check input[type="checkbox"] {
+  @apply w-6;
+}
+
+.formWrapper__input.status_error input {
+  @apply border-2 border-[#E31F1F];
+}
+.formWrapper__input.status_error input:focus {
+  @apply border-2 border-[#E31F1F]  outline-[#E31F1F];
+}
