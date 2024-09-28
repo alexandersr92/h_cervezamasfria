@@ -12,7 +12,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.hcreativa.com
-          username: cerveza@hcreativa.com
+          username: cerceza@hcreativa.com
           password: ${{ secrets.PASSWORD }}
           protocol: ftps
           port: 21 # todo replace with your web hosts ftps port
