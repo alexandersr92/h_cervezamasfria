@@ -1,4 +1,5 @@
 <?php
+var_dump("llego hasta aqui");
 require get_template_directory() . '/vendor/autoload.php';
 
 use Aws\S3\S3Client;
@@ -6,7 +7,6 @@ use Aws\S3\S3Client;
 
 function uploadImage($facturaImage)
 {
-  var_dump("llego hasta aqui");
   $region  = 'us-west-1';
   $version = 'latest';
   $access_key_id = get_field('access_key_id', 'option');
