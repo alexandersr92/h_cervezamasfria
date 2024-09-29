@@ -1,6 +1,6 @@
 <?php
 $mainImage = get_field('main_image');
-
+var_dump('asdfasdf111');
 
 if ($_POST) {
 
