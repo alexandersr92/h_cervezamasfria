@@ -3,7 +3,6 @@ $mainImage = get_field('main_image');
 
 
 if ($_POST) {
-  var_dump(get_template_directory() . '/blocks/register/save.php');
 
   include_once(get_template_directory() . '/blocks/register/save.php');
 }
