@@ -32,9 +32,12 @@ if (count($resultFactura) > 0) {
   $error_factura = true;
 }
 //comprove if the phone is already in the database
-var_dump($wpdb->last_query);
+var_dump($resultFactura);
+var_dump($error_phone);
+
 
 if (!$error_phone &&  !$error_factura && $nombre && $telefono && $cedula && $factura && $factura_imagen && $terminos) {
+  var_dump('entro');
   $factura_imagen_type = $factura_imagen['type'];
   $factura_imagen_ext = str_replace('image/', '', $factura_imagen['type']);
   $factura_imagen_actual_ext = strtolower(end($factura_imagen_ext));
