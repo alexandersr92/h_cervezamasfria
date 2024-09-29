@@ -15,7 +15,7 @@ $terminos = $_POST['terminos'];
 $table_name_participantes = $wpdb->prefix . 'super_express_participantes';
 $error_phone = false;
 $error_factura = false;
-var_dump($_POST);
+
 if ($isNewRegister) {
 
   $results = $wpdb->get_results("SELECT * FROM $table_name_participantes WHERE phone = '$telefono'");
@@ -42,7 +42,7 @@ if (!$error_phone &&  !$error_factura && $nombre && $telefono && $cedula && $fac
 
   include_once get_template_directory() . '/src/upload.php';
   $uploadImage = uploadImage($_FILES['factura_imagen']);
-
+  var_dump($uploadImage);
   //save in database
   if ($uploadImage['wasUploaded']) {
     global $wpdb;
