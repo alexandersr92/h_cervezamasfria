@@ -41,6 +41,7 @@ if (!$error_phone &&  !$error_factura && $nombre && $telefono && $cedula && $fac
   $_FILES['factura_imagen']['name'] =  str_replace(' ', '_', $nombre) . "_" . $factura . "_" . rand(0, 999) . "." . $factura_imagen_actual_ext;
   include_once get_template_directory() . '/src/upload.php';
   var_dump($_FILES['factura_imagen']);
+  var_dump($factura_imagen_type);
   $uploadImage = uploadImage($_FILES['factura_imagen']);
 
   //save in database
