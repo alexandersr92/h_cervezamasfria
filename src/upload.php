@@ -1,5 +1,5 @@
 <?php
-var_dump("llego hasta aqui");
+
 require get_template_directory() . '/vendor/autoload.php';
 
 use Aws\S3\S3Client;
@@ -7,8 +7,7 @@ use Aws\S3\S3Client;
 
 function uploadImage($facturaImage)
 {
-  var_dump("llego hasta aqui2");
-  var_dump($facturaImage);
+
 
   $region  = 'us-west-1';
   $version = 'latest';
@@ -22,7 +21,7 @@ function uploadImage($facturaImage)
 
 
     $file_name = basename($facturaImage["name"]);
-    var_dump($file_name);
+
     $file_type = pathinfo($file_name, PATHINFO_EXTENSION);
 
     // Allow certain file formats 

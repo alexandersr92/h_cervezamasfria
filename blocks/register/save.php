@@ -34,14 +34,12 @@ if (count($resultFactura) > 0) {
 
 
 if (!$error_phone &&  !$error_factura && $nombre && $telefono && $cedula && $factura && $factura_imagen && $terminos) {
-  var_dump("si entra 1");
   $factura_imagen_type = $factura_imagen['type'];
   $factura_imagen_ext = str_replace('image/', '', $factura_imagen['type']);
   $factura_imagen_actual_ext = strtolower(end($factura_imagen_ext));
   $_FILES['factura_imagen']['name'] =  str_replace(' ', '_', $nombre) . "_" . $factura . "_" . rand(0, 999) . "." . $factura_imagen_actual_ext;
   include_once get_template_directory() . '/src/upload.php';
-  var_dump($_FILES['factura_imagen']);
-  var_dump($factura_imagen);
+
   $uploadImage = uploadImage($_FILES['factura_imagen']);
 
   //save in database
@@ -70,6 +68,6 @@ if (!$error_phone &&  !$error_factura && $nombre && $telefono && $cedula && $fac
     $count = count($results);
 
 
-    echo "<script>window.location.href='/registro-exitoso?count=$count&ph=$telefono';</script>";
+    //echo "<script>window.location.href='/registro-exitoso?count=$count&ph=$telefono';</script>";
   }
 }
