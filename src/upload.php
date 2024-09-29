@@ -7,6 +7,9 @@ use Aws\S3\S3Client;
 
 function uploadImage($facturaImage)
 {
+  var_dump("llego hasta aqui2");
+  var_dump($facturaImage);
+
   $region  = 'us-west-1';
   $version = 'latest';
   $access_key_id = get_field('access_key_id', 'option');
