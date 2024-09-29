@@ -1,8 +1,8 @@
 <?php
 //
+var_dump('asdfasdf112233');
 global $wpdb;
 ob_start();
-var_dump('asdfasdf');
 
 $isNewRegister = isset($_POST['isNewRegister']) ? true : false;
 $nombre = $_POST['nombre'];
