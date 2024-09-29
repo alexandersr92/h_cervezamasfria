@@ -31,19 +31,16 @@ $resultFactura = $wpdb->get_results("SELECT * FROM $table_name_participantes WHE
 if (count($resultFactura) > 0) {
   $error_factura = true;
 }
-//comprove if the phone is already in the database
-var_dump($resultFactura);
-var_dump($error_phone);
 
 
 if (!$error_phone &&  !$error_factura && $nombre && $telefono && $cedula && $factura && $factura_imagen && $terminos) {
-  var_dump('entro');
   $factura_imagen_type = $factura_imagen['type'];
   $factura_imagen_ext = str_replace('image/', '', $factura_imagen['type']);
   $factura_imagen_actual_ext = strtolower(end($factura_imagen_ext));
   $_FILES['factura_imagen']['name'] =  str_replace(' ', '_', $nombre) . "_" . $factura . "_" . rand(0, 999) . "." . $factura_imagen_actual_ext;
 
   include_once get_template_directory() . '/src/upload.php';
+  var_dump($_FILES);
   $uploadImage = uploadImage($_FILES['factura_imagen']);
 
   //save in database
