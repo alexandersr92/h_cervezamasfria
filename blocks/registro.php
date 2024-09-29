@@ -3,6 +3,7 @@ $mainImage = get_field('main_image');
 var_dump('asdfasdf111');
 
 if ($_POST) {
+  var_dump('asdfasdf111222');
 
   include_once(get_template_directory() . '/blocks/register/save.php');
 }
