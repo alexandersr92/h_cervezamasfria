@@ -1,6 +1,6 @@
 <?php
 //
-var_dump('asdfasdf112233');
+
 global $wpdb;
 ob_start();
 
@@ -15,9 +15,9 @@ $terminos = $_POST['terminos'];
 $table_name_participantes = $wpdb->prefix . 'super_express_participantes';
 $error_phone = false;
 $error_factura = false;
-
+var_dump($_POST);
 if ($isNewRegister) {
-  global $wpdb;
+
   $results = $wpdb->get_results("SELECT * FROM $table_name_participantes WHERE phone = '$telefono'");
   if (count($results) > 0) {
     $error_phone = true;
