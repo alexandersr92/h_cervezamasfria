@@ -68,6 +68,6 @@ if (!$error_phone &&  !$error_factura && $nombre && $telefono && $cedula && $fac
     $count = count($results);
 
 
-    //echo "<script>window.location.href='/registro-exitoso?count=$count&ph=$telefono';</script>";
+    echo "<script>window.location.href='/registro-exitoso?count=$count&ph=$telefono';</script>";
   }
 }
