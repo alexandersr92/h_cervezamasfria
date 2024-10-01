@@ -141,3 +141,8 @@ ul.nav__list__mobile li.current-menu-item:not(.no-active) {
 .overlay {
   @apply bg-black bg-opacity-50 fixed top-0 left-0 w-full h-full z-50;
 }
+
+.text-outline {
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000;
+}

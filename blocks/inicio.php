@@ -35,7 +35,7 @@ $participeLink = get_field('participe_link');
     <div class="container  ">
 
       <h3 class="text-white font-extrabold text-center text-[52px] "><?= $particeTitle ?></h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-20 mt-20 md:w-[1000px] mx-auto ">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-20 mt-20 md:w-[1000px] mx-auto items-start ">
         <img class="absolute w-[80px] md:w-[250px] -rotate-12 right-0 -bottom-10 md:left-2 md:top-[22rem]" src="<?= $floatElements[1]['image']['url'] ?>" alt="">
         <img class="absolute h-[270px] md:h-[623px] rotate-12 left-0 -bottom-14 md:left-[88%] md:top-48" src="<?= $floatElements[0]['image']['url'] ?>" alt="">
 
@@ -45,8 +45,8 @@ $participeLink = get_field('participe_link');
           foreach ($steps as $key => $step) {
         ?>
             <div class="w-full  flex flex-col items-center justify-center gap-6">
-              <div class="w-[120px] h-[120px] rounded-full bg-gradient-to-b from-secondary-100 to-secondary-200 border-[10px] border-primary-200 flex flex-row items-center justify-center ">
-                <p class="text-text text-[52px] font-extrabold"><?= $key + 1 ?></p>
+              <div class="w-[120px] h-[120px] rounded-full bg-[#FF671D] border-8 border-black flex flex-row items-center justify-center ">
+                <p class="text-[#FEBE26] text-[52px] font-extrabold text-outline "><?= $key + 1 ?></p>
               </div>
               <p class="text-white font-extrabold text-center text-xl"><?= $step['text'] ?></p>
 
