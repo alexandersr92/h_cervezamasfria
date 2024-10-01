@@ -12,7 +12,7 @@ $rrss = get_field('rrss', 'option');
             foreach ($rrss as $rs) {
 
             ?>
-                <a href="<?= $rs['link']['url'] ?>" target="_blank"><img src="<?= $rs['icon']['url'] ?>"></a>
+                <a href="<?= $rs['link']['url'] ?>" target="_blank"><img class="w-10 h-10" src="<?= $rs['icon']['url'] ?>"></a>
             <?php
             }
             ?>
