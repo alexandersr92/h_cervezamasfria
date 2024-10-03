@@ -1,5 +1,6 @@
 <?php
 $logo = get_field('logo', 'option');
+$logo_secundario = get_field('logo_secundario', 'option');
 $arrMenu = [
     'theme_location' => 'primary-menu',
     'container' => 'nav',
@@ -103,8 +104,13 @@ $arrMenu_mobile = [
         <div class="container relative">
             <div class="flex flex-row items-center justify-between pt-6">
                 <a class="block " href="<?php echo home_url() ?>">
-                    <img class="h-16" src="<?php echo $logo['url'] ?>" alt="<?php echo $logo['alt'] ?>" class="w-24" />
+                    <img class="h-16" src="<?php echo $logo['url'] ?>" alt="<?php echo $logo['alt'] ?>" />
                 </a>
+                <div class="h-7 ">
+
+                    <img class="block h-[30px]" src="<?php echo $logo_secundario['url'] ?>" alt="<?php echo $logo_secundario['alt'] ?>" />
+                </div>
+
                 <div>
                     <div class="hidden md:block">
 
