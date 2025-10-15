@@ -150,7 +150,7 @@ $hasPremio = count($premios) > 0;
           <div class=" grid grid-cols-2 gap-4">
             <div class="formWrapper self-baseline">
               <div class="w-full md:w-[550px] mb-6">
-                <h3>Fecha de Sorteo: <?= $fecha_formateada ?></h3>
+                <h3 class="titleWhite">Fecha de Sorteo: <?= $fecha_formateada ?></h3>
                 <p>Información de Ganador</p>
                 <div class="flex flex-col gap-4 mt-5">
                   <div class="winnerElementWrapp">
@@ -185,7 +185,7 @@ $hasPremio = count($premios) > 0;
                       <img class="h-40 w-40 object-contain" src="<?= $winner['premio']->image ?>" alt="">
                       <div class="frameWinner ">
                         <p class="text-white font-bold text-2xl text-left">Ha sido el ganador de un</p>
-                        <h3 class="!text-[32px] leading-8 text-left"><?= $winner['premio']->name ?></h3>
+                        <h3 class="!text-[32px] leading-8 text-left !text-[#FDFF86]"><?= $winner['premio']->name ?></h3>
                       </div>
                     </div>
                     <div class="flex flex-row justify-between gap-4 py-4 w-full">
@@ -214,7 +214,7 @@ $hasPremio = count($premios) > 0;
             </div>
             <div class="formWrapper ">
               <div class="w-full md:w-[550px] mb-6">
-                <h3>LISTADO DE GANADORES</h3>
+                <h3 class="titleWhite">LISTADO DE GANADORES</h3>
                 <table class="tableWinner">
                   <thead>
                     <tr>

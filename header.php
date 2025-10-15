@@ -106,10 +106,16 @@ $arrMenu_mobile = [
                 <a class="block " href="<?php echo home_url() ?>">
                     <img class="h-16" src="<?php echo $logo['url'] ?>" alt="<?php echo $logo['alt'] ?>" />
                 </a>
-                <div class="h-7 ">
-
-                    <img class="block h-[30px]" src="<?php echo $logo_secundario['url'] ?>" alt="<?php echo $logo_secundario['alt'] ?>" />
-                </div>
+                <?php if ( !empty($logo_secundario) && isset($logo_secundario['url']) ) : ?>
+                    <div class="h-7">
+                        <img 
+                            class="block h-[30px]" 
+                            src="<?php echo esc_url($logo_secundario['url']); ?>" 
+                            alt="<?php echo esc_attr($logo_secundario['alt'] ?? 'Logo secundario'); ?>" 
+                        />
+                    </div>
+                <?php endif; ?>
+              
 
                 <div>
                     <div class="hidden md:block">

@@ -49,14 +49,14 @@ $finalText = get_field('premio_text', 'option');
 
 <div class="formWrapper md:w-[700px]">
   <div class="flex flex-col gap-2">
-    <h3 style="font-size: 32px; " class="leading-[38px]">¡Felicidades,<br><?= $nombre ?></h3>
-    <p>Has sido el ganador de un</p>
-    <h3 style="font-size: 52px;" class="leading-[50px]"><?= $premio ?></h3>
+    <h3 style="font-size: 32px; " class="leading-[38px] !text-[#FDFF86]">¡Felicidades,<br><?= $nombre ?></h3>
+    <p >Has sido el ganador de un</p>
+    <h3 style="font-size: 52px;" class="leading-[50px] !text-[#FDFF86]"><?= $premio ?></h3>
     <p style="font-size: 18px;">en el sorteo realizado el día <?= $sorteoFecha ?></p>
     <div class="flex justify-center">
       <img class="h-[250px]" src="<?= $premioImage ?>" alt="<?= $premio ?>">
     </div>
-    <p style="font-size: 18px;"> <?= $finalText ?></p>
+    <p style="font-size: 18px; margin-top:20px"> <?= $finalText ?></p>
 
   </div>
 

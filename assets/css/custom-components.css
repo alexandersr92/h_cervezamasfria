@@ -1,6 +1,6 @@
 @layer components {
   .btn {
-    @apply text-[#173981] font-extrabold inline-flex w-72 h-[60px] text-xl items-center justify-center rounded-[10px] cursor-pointer;
+    @apply text-textDark font-extrabold inline-flex w-72 h-[60px] text-xl items-center justify-center rounded-[10px] cursor-pointer;
   }
   .btn-tombola {
     @apply w-60;

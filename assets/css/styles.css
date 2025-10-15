@@ -1,11 +1,11 @@
-@import "tailwindcss/base";
+@import 'tailwindcss/base';
 
-@import "tailwindcss/components";
+@import 'tailwindcss/components';
 
-@import "tailwindcss/utilities";
-@import "./custom-components.css";
+@import 'tailwindcss/utilities';
+@import './custom-components.css';
 
-@import "./custom-utilities.css";
+@import './custom-utilities.css';
 
 /* admin bar fix */
 
@@ -21,17 +21,17 @@ label,
 button,
 a,
 table {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .supperBackground {
   /* Imagen de fondo que se repite */
-  background-image: url("/wp-content/themes/superexpress/assets/img/bg.jpeg"),
+  background-image: url('/wp-content/themes/superexpress/assets/img/bg.jpg'),
     /* Imagen de patrón */
       radial-gradient(
         50% 69.63% at 50% 65.74%,
-        rgba(255, 255, 255, 0.2) 0%,
-        rgba(0, 0, 0, 0.2) 100%
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(0, 0, 0, 0.4) 100%
       ),
     radial-gradient(
       71.8% 102.59% at 50% 52.04%,
@@ -51,11 +51,11 @@ table {
 }
 
 .bgHeaderDeco {
-  background-image: url("/wp-content/themes/superexpress/assets/img/header_deco.svg");
+  background-image: url('/wp-content/themes/superexpress/assets/img/header_deco.svg');
   background-repeat: repeat-x;
 }
 .bgFooterDeco {
-  background-image: url("/wp-content/themes/superexpress/assets/img/border footer-min.png");
+  background-image: url('/wp-content/themes/superexpress/assets/img/border footer-min.png');
 
   background-repeat: repeat-x;
   background-size: cover;
@@ -99,7 +99,7 @@ ul.nav__list__mobile li.current-menu-item:not(.no-active) {
 }
 .winnerElement {
   margin-bottom: 0px !important;
-  @apply bg-[#FF671D] border-[#FBFF40] border-4 py-6 w-full rounded-full flex justify-center items-center text-[26px] tracking-wider;
+  @apply bg-white border-[#A5E5FE] border-4 py-6 w-full rounded-full flex justify-center items-center text-[26px] tracking-wider;
 }
 
 .tableWinner {
@@ -143,6 +143,6 @@ ul.nav__list__mobile li.current-menu-item:not(.no-active) {
 }
 
 .text-outline {
-  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
-    -2px -2px 0 #000;
+  text-shadow: 2px 2px 0 #002972, -2px 2px 0 #002972, 2px -2px 0 #002972,
+    -2px -2px 0 #002972;
 }
