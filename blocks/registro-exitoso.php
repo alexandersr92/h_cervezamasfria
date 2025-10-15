@@ -23,10 +23,8 @@ $ph = $_GET['ph'];
           <div class="w-full md:w-[390px]">
             <img class="w-[150px] mx-auto" src="<?= get_template_directory_uri() . '/assets/img/ok.gif' ?>" alt="">
             <p>¡Gracias por participar!</p>
-            <h3>Llevas <?= $count ?> registro<?= $count !== '1' ? 's' : '' ?></h3>
-            <p class="p_small">Recordá que entre más facturas subás, más oportunidades tendrás de ganar 1 año de Cerveza Toña GRATIS.<br><br>
-
-              ¡Vos podés ser uno de los <b>4 ganadores!</b></p>
+            <h3 class="titleWhite">Llevas <?= $count ?> registro<?= $count !== '1' ? 's' : '' ?></h3>
+            <p class="p_small">Recordá que entre más facturas subás, más oportunidades tendrás de ganar <b>1 certificado de $100</b> consumibles en Pasolion.<br><br>¡Vos podés ser uno de los <b>5 ganadores!</b></p>
             <div class="flex flex-row justify-center">
 
               <a class="btn-primary" href="<?= $link['url'] ?>/?ph=<?= $ph ?>"><?= $link['title'] ?></a>

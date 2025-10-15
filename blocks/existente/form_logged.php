@@ -21,7 +21,7 @@ $count = $wpdb->get_var("SELECT COUNT(*) FROM $table_name WHERE phone = $ph");
 
 <div class="formWrapper md:w-[700px]">
   <div class="w-full md:w-[390px]">
-    <h3>Bienvenido (a), llevas <?= $count ?> Registro<?= $count !== '1' ? 's' : '' ?></h3>
+    <h3  class="titleWhite">Bienvenido (a), llevas <?= $count ?> Registro<?= $count !== '1' ? 's' : '' ?></h3>
     <p>Subí tu factura de compra</p>
   </div>
   <form action="#" id="registerExistent" method="POST" enctype="multipart/form-data">

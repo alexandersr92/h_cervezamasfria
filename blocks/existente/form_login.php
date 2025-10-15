@@ -1,6 +1,6 @@
 <div class="formWrapper md:w-[700px]">
   <div class="w-full md:w-[390px]">
-    <h3>Si ya estás registrado (a)</h3>
+    <h3 class="titleWhite">Si ya estás registrado (a)</h3>
     <p>Completa los campos para poder ingresar</p>
   </div>
   <form action="#" method="GET">
