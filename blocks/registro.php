@@ -19,7 +19,7 @@ if ($_POST) {
       </div>
       <div class="formWrapper md:w-[700px]">
         <div class="w-full md:w-[550px] mb-6">
-          <h3>Registrate para ganar</h3>
+          <h3 class="titleWhite">Registrate para ganar</h3>
           <p>Completá los campos para poder ingresar</p>
           <?= isset($error_factura) && $error_factura || isset($error_phone) && $error_phone ? ' <span class="text-[#E31F1F] text-center font-semibold text-base">Revisá los campos que se marcan en rojo para poder registrate.</span>' : '' ?>
 
