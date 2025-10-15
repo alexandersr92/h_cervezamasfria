@@ -34,7 +34,7 @@ $participeLink = get_field('participe_link');
   <div id="como_participar " class="py-20 pb-60 md:pb-20 bg-[#FF671D] relative">
     <div class="container  ">
 
-      <h3 class="text-white font-extrabold text-center text-[52px] "><?= $particeTitle ?></h3>
+      <h3 class="text-red-500 font-extrabold text-center text-[52px] "><?= $particeTitle ?></h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-20 mt-20 md:w-[1000px] mx-auto items-start ">
         <img class="absolute w-[80px] md:w-[250px] -rotate-12 right-0 -bottom-10 md:left-2 md:top-[22rem]" src="<?= $floatElements[1]['image']['url'] ?>" alt="">
         <img class="absolute h-[270px] md:h-[623px] rotate-12 left-0 -bottom-14 md:left-[88%] md:top-48" src="<?= $floatElements[0]['image']['url'] ?>" alt="">
